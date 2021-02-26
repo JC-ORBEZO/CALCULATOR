@@ -10,7 +10,12 @@
     <link rel="stylesheet" href="index.css"/>
 </head>
 <body>  
-    <h1 style="text-align: center;">Th3 bE5t C4lCul4t0r</h1>  
+    <header class="justify-content-center">
+        <h1 style="text-align: center;">Th3 bE5t C4lCul4t0r</h1>
+    </header>
+    <br>
+    <br>
+    <main>      
     <div class="container justify-content-center mt-5 caja">
         
         <h2 style="text-decoration: underline;
@@ -28,7 +33,7 @@
                 <button class="btn btn-primary tama-boton" onclick="ingresoNum(`8`)">8</button>
                 <button class="btn btn-primary tama-boton" onclick="ingresoNum(`9`)">9</button>
                 <button class="btn btn-primary tama-boton" onclick="opera(`DEL`)">DEL</button>
-                <button class="btn btn-primary tama-boton" onclick="opera(`^^`)">ON</button>
+                <button class="btn btn-primary tama-boton" onclick="opera(`ON`)">ON</button>
                                 
             </div>           
             
@@ -47,13 +52,20 @@
                 <button class="btn btn-primary tama-boton" onclick="opera(`-`)">-</button>                          
             </div>
             <div class="col-12  mt-2">
-                <button class="btn btn-primary tama-boton" onclick="opera(`0`)">0</button>
-                <button class="btn btn-primary tama-boton" onclick="opera(`.`)">.</button>
+                <button class="btn btn-primary tama-boton" onclick="ingresoNum(`0`)">0</button>
+                <button class="btn btn-primary tama-boton" onclick="ingresoNum(`.`)">.</button>
                 <button class="btn btn-primary tama-boton" onclick="opera(`EXP`)">EXP</button>
                 <button class="btn btn-primary tama-boton" onclick="opera(`ANS`)">ANS</button>
                 <button class="btn btn-primary tama-boton" onclick="opera(`=`)">=</button>
             </div>
         </div>
     </div>
+    </main>
+    <footer>
+        <p class="pie ml-2">
+        Jose Orbezo Rosales - 
+        Treno Eventos JS
+        </p>        
+    </footer>
 </body>
 </html>

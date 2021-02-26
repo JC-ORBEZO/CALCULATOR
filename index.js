@@ -1,12 +1,12 @@
 operEnSi=(a,b,c,d)=>{
     switch(a){
-        case `+`:d=parseInt(b)+parseInt(c);        
+        case `+`:d=parseFloat(b)+parseFloat(c);        
             break;
-        case `-`:d=parseInt(b)-parseInt(c);
+        case `-`:d=parseFloat(b)-parseFloat(c);
             break;
-        case `x`:d=parseInt(b)*parseInt(c);
+        case `x`:d=parseFloat(b)*parseFloat(c);
             break;
-        case `/`:d=parseInt(b)/parseInt(c);
+        case `/`:d=parseFloat(b)/parseFloat(c);
             break;
     }
     return d;
@@ -131,31 +131,37 @@ ingresoNum=(o)=>{
     opera=(a)=>{
         
     switch(a){
-        case `+`:reg.val1=parseInt(document.getElementById("panta").value);
+        case `+`:reg.val1=parseFloat(document.getElementById("panta").value);
         //console.log(reg.val1);
         reg.oper="+";
         document.getElementById("panta").value="";
             break;
-        case `-`:reg.val1=parseInt(document.getElementById("panta").value);
+        case `-`:reg.val1=parseFloat(document.getElementById("panta").value);
         //console.log(reg.val1);
         reg.oper="-";
         document.getElementById("panta").value="";
             break;
-        case `x`:reg.val1=parseInt(document.getElementById("panta").value);
+        case `x`:reg.val1=parseFloat(document.getElementById("panta").value);
         //console.log(reg.val1);
         reg.oper="x";
         document.getElementById("panta").value="";
             break;
-        case `/`:reg.val1=parseInt(document.getElementById("panta").value);
+        case `/`:reg.val1=parseFloat(document.getElementById("panta").value);
         //console.log(reg.val1);
         reg.oper="/";
         document.getElementById("panta").value="";
             break;
         case `=`:
-        reg.val2=parseInt(document.getElementById("panta").value);
+        reg.val2=parseFloat(document.getElementById("panta").value);
         reg.result=operEnSi(reg.oper,reg.val1,reg.val2,reg.result);
         document.getElementById("panta").value=reg.result;
-
+            break;
+        case `DEL`:
+            document.getElementById("panta").value="0";
+            break;
+        case `ON`:
+            document.getElementById("panta").value="";
+            document.getElementById("panta").blur();
             break;
     }
     }
