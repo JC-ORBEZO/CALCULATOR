@@ -9,6 +9,10 @@ header {
   position: fixed;
 }
 
+h1 {
+  color: blue;
+}
+
 main {
   background: #fcf007;
   height: 750px;
